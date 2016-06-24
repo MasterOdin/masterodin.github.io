@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/masterodin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mpeveler.com
+  * I am masterodin (https://keybase.io/masterodin) on keybase.
+  * I have a public key with fingerprint B60F B57C 9D18 D1AC 25A2  4BDD CA5E 164E 9A4E FBFB
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "b60fb57c9d18d1ac25a24bddca5e164e9a4efbfb",
+            "host": "keybase.io",
+            "key_id": "ca5e164e9a4efbfb",
+            "uid": "57d3b7c797e53a07e877fb932861af00",
+            "username": "masterodin"
+        },
+        "service": {
+            "hostname": "mpeveler.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1415311051,
+    "expire_in": 157680000,
+    "prev": "d6b322ce2188acef0234a7121734e39c4624ce7e1b4447314c9da1897acba0cf",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.3
+Comment: https://keybase.io/crypto
+
+yML8AnicO8LLzMDFeCpOzG+W3+/fjKcPfC5lCIl+d7paKSk/pVLJqlopOxVMpWXm
+pacWFRRl5pUoWSklmRmkJZmaJ1umGFqkGCYmG5kmGpkkpaQkJ5qmGpqZpFommqSm
+JaUlKekoZeQXg3QAjUlKLE7Vy8wHigE58ZkpQFEs6kvBEqbmKcZJ5snmluappsaJ
+BuapFubmaUmWxkYWZoaJaQYGIIXFqUV5ibmpQNW5icUlqUX5KZl5SrU6SkDxsszk
+VJCrQZbD1BSklqXmpBbpJefnAnUXFOWX5Cfn5wBlMkpKCqxAGksqC0Aqy1OT4qFm
+xCdl5gFNTQdqKEstKs7Mz1OyMgSqTC7JBBlqaGJoamxoaGBqqKOUWlGQWZQanwlS
+YWpuZmEABCBrUsuARqaYJRkbGSWnGhlaWCQmp6YZGBmbJJobGhmaG5ukGlsmm5gZ
+mSSnmqcaJpmYmJgbG5oAQzbR0MLSPDE5KdEgOU0J5KvCvHwlK1OgMxPTgUYWZ6bn
+JZaUFqUq1R46GMPCwMjFwMbKBIo7Bi5OAViMagoKMHSIbvxeNT9CRH976YtpSoo/
+u44pbvvHYn/ry5ZLap1PE44YX3I55bdUqa0ywlX4w+2v8/Y7Tv38zuyfgOIfJdn3
+7zhe8onGeL7Z5fJrQkDYrzi1LVc7dSbIGrBbmqbwTDdkfsZ1S7urVyEr5e7h9s1P
+ehYp//EvqX716O2i9N0JkozrM07INEauUxe4zPDo2+9PLQFp64quWM6alBy3UN5M
+X38R37S/p692ak0/l3t2nlaVcXrRjn8dbI/0F+eeMxMV5rihmx68f97xxQnMZp7y
+4bvcjr+bVsX02u2/HVuIeMHKXcnruu7kuO44VB97tLQ5sX3Ls+Qs/Uj99gNPTFIW
+RNVpqxkGO+wXvGSxlPt2LMesdTPzn683itxlNEvVdK+B5PEwPzu2oLqPFgeua8rc
+7ea5Gqr355jF4mXP0va5u30SFn27ZmXpfxvF9KUa97kf3Ut4qemhqeP6rOR25ya+
+ct/fmblu3kmvHedLvdGcyrTfUumTbfQUYSmZTH+Pi7euLcl6dllJ9tnWmI4X++8/
+rD/A91WKYVufwAH+BonyL/eV+J4Ihl9q0t2tfUQkV6dhyV3rljabd59S0natECpg
+St60ftOTSu4exbOGIfPlGZ07fu5IvJ0uXqp5qs3iS6ZzBuNva4VLhy4Ubps4/Zep
+tNhrmctOtv/qS65fd3jTMWWiQeYUgwk5eQscHkal3LM7zDbFNyJ1Y0sGAGwfkUs=
+=c9LI
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/masterodin
+
+==================================================================
