@@ -15,13 +15,13 @@
     {
         "name": "8-Block Sliding Puzzle",
         "thumbnail": "8block.jpg",
-        "description": "Written in Python, this is an implementation of the A* algorithm to solve the 8-block sliding puzzle using the <a target='_blank' href='http://www.improvedoutcomes.com/docs/WebSiteDocs/Clustering/Clustering_Parameters/Manhattan_Distance_Metric.htm'>Manhattan Distance</a> Heuristic. It accepts as input 3 numbers per 3 lines (enter three numbers with spaces, then hit enter, three spaces, etc.). It provides checking on whether or not the given puzzle is solvable before attempting, and then solves the puzzle, outputting the shortest path to the goal state."
+        "description": "Written in Python, this is an implementation of the A* algorithm to solve the 8-block sliding puzzle using the <a target='_blank' href='http://www.improvedoutcomes.com/docs/WebSiteDocs/Clustering/Clustering_Parameters/Manhattan_Distance_Metric.htm'>Manhattan Distance</a> Heuristic. It accepts as input 3 numbers per 3 lines (enter three numbers with spaces, then hit enter, three spaces, etc.). It provides checking on whether or not the given puzzle is solvable before attempting, and then solves the puzzle, outputting the shortest path to the goal state.",
         "github": "https://github.com/MasterOdin/8block-sliding-puzzle"
     },
     {
         "name": "Context-Free Grammar to Chomsky-Normal Form Generator",
         "thumbnail": "cfg2cnf.jpg",
-        "description": "Written in PHP, this is a generator that takes in a <a target='_blank' href='https://en.wikipedia.org/wiki/Context-free_grammar'>Content-Free Grammar</a> and converts it to <a target='_blank' href='https://en.wikipedia.org/wiki/Chomsky_normal_form'>Chomksy Normal Form</a> through the algorithm stated on the wikipedia page for CNF."
+        "description": "Written in PHP, this is a generator that takes in a <a target='_blank' href='https://en.wikipedia.org/wiki/Context-free_grammar'>Content-Free Grammar</a> and converts it to <a target='_blank' href='https://en.wikipedia.org/wiki/Chomsky_normal_form'>Chomksy Normal Form</a> through the algorithm stated on the wikipedia page for CNF.",
         "github": "https://github.com/MasterOdin/cfg2cnf",
         "demo": "http://mpeveler.com/assets/content/projects/cfg2cnf.php"
     }
