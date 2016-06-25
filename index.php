@@ -8,7 +8,18 @@ $pages = array(
 /* end init */
 
 $content = !isset($_GET['content']) || !in_array($_GET['content'],$pages) ? 'home' : $_GET['content'];
-?>
+
+$selected = array();
+foreach ($pages as $page) {
+	if ($content == $page) {
+		$selected[$page] = "class='selected'";
+	}
+	else {
+		$selected[$page] = "";
+	}
+}
+
+print <<<HTML
 
 <!doctype html>
 <html lang="en">
@@ -24,18 +35,18 @@ $content = !isset($_GET['content']) || !in_array($_GET['content'],$pages) ? 'hom
 	<div id="header">
 		<div id="menu">
 			<ul>
-				<li<?php print ($content == "home") ? ' class="selected"' : ""; ?>><a href="?content=home">Home</a></li>
-				<li<?php print ($content == "work") ? ' class="selected"' : ""; ?>><a href="?content=work">Work</a></li>
-				<li<?php print ($content == "resume") ? ' class="selected"' : ""; ?>><a href="?content=resume">Résumé</a></li>
+				<li {$selected["home"]}><a href="?content=home">Home</a></li>
+				<li {$selected["work"]}><a href="?content=work">Work</a></li>
+				<li {$selected["resume"]}><a href="?content=resume">Résumé</a></li>
 			</ul>
 		</div>
 		<h1><a href="?content=home">matthew peveler</a></h1>
 	</div>
 
 	<div id="content">
-<?php
-	require_once("assets/content/".$content.".html");
-?>
+HTML;
+	require_once("assets/content/{$content}.php");
+print <<<HTML
 	</div>
 
 	<hr />
@@ -48,3 +59,4 @@ $content = !isset($_GET['content']) || !in_array($_GET['content'],$pages) ? 'hom
 </div>
 </body>
 </html>
+HTML;
