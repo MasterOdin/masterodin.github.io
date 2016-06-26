@@ -37,6 +37,7 @@ print <<<HTML
 			<ul>
 				<li {$selected["home"]}><a href="?content=home">Home</a></li>
 				<li {$selected["work"]}><a href="?content=work">Work</a></li>
+				<li {$selected["publications"]}><a href="?content=publications">Publications</a></li>
 				<li {$selected["resume"]}><a href="?content=resume">Résumé</a></li>
 			</ul>
 		</div>
