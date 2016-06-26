@@ -3,11 +3,11 @@
 print <<<PRINT
 <h2>projects</h2>
 <p>Listed below is a curated list of projects that I've made or made signficant contributions to. A full list of
-    my projects can be viewed on my <a href='https://github.com/MasterOdin'>Github</a> page.</p>
+    my projects can be viewed on my <a target='_blank' href='https://github.com/MasterOdin'>Github</a> page.</p>
 <div id="workProjects">
 PRINT;
 
-$projects = json_decode(__DIR__."../data/projects.json", true);
+$projects = json_decode(file_get_contents(__DIR__."../data/projects.json"), true);
 
 foreach ($projects as $project) {
     $links = array();
@@ -27,8 +27,8 @@ foreach ($projects as $project) {
             <img src="http://mpeveler.com/assets/images/thumbnails/{$project['thumbnail']}">
         </div>
         <div class="desc">
-            <h3>{$project['title']}</h3>
-            {$project['desc']}<br /><br />
+            <h3>{$project['name']}</h3>
+            {$project['description']}<br /><br />
             {$links}
         </div>
     </div>
