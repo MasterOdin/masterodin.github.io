@@ -4,6 +4,7 @@ $pages = array(
 				'home',
 				'work',
 				'resume',
+				'publications',
 			);
 /* end init */
 
