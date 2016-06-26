@@ -7,7 +7,7 @@ print <<<PRINT
 <div id="workProjects">
 PRINT;
 
-$projects = json_decode(file_get_contents(__DIR__."../data/projects.json"), true);
+$projects = json_decode(file_get_contents(__DIR__."/../data/projects.json"), true);
 
 foreach ($projects as $project) {
     $links = array();
