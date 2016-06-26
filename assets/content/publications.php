@@ -5,6 +5,6 @@ print <<<HTML
 HTML;
 foreach ($publications as $pub) {
     print <<<HTML
-{$pub['authors']} {$pub['year']}, {$pub['title']}. {$pub['at']}<br />
+{$pub['authors']} {$pub['year']}, {$pub['title']}. {$pub['at']}<br /><br />
 HTML;
 }
