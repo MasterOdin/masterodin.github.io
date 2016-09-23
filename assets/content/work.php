@@ -24,7 +24,7 @@ foreach ($projects as $project) {
     print <<<HTML
     <div class='project'>
         <div class='thumb'>
-            <img src="http://mpeveler.com/assets/images/thumbnails/{$project['thumbnail']}">
+            <img src="https://mpeveler.com/assets/images/thumbnails/{$project['thumbnail']}">
         </div>
         <div class="desc">
             <h3>{$project['name']}</h3>
