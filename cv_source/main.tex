@@ -1,0 +1,271 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[numbers]{natbib}
+\usepackage{bibentry}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNew}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheadingProject}[2] {
+  \vspace{-1pt}\item
+    \textbf{#1} (\textnormal{\href{#2}{#2}}) \vspace{-10pt} \\
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingNew}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+      \multicolumn{2}{l}{\textnormal{\small #5}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+  
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\bibliographystyle{apalike_new}
+\nobibliography{peveler}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://mpeveler.com/}{\Large Matthew Peveler}} & \href{mailto:matt.peveler@gmail.com}{matt.peveler@gmail.com}\\
+  \href{https://mpeveler.com/}{https://mpeveler.com} & 737 River St, Apt 3, Troy, NY 12180 \\
+  \href{https://github.com/MasterOdin}{https://github.com/MasterOdin} & (201) 478-3065
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingNew
+      {Rensselaer Polytechnic Institute}{Troy, NY}
+      {Ph.D., Computer Science}{Expected Summer 2020}
+      {Teaching Assistant: Fall 2013 - Spring 2015; Research Assistant: Fall 2015 - Ongoing}
+    \resumeSubheadingNew
+      {The College of New Jersey}{Ewing, NJ}
+      {Bachelor of Science, Computer Science}{May. 2013}
+      {Member of Upsilon Pi Epsilon, International Honor Society for Computing Sciences}
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS---------------
+\section*{Publications}
+  \begin{itemize}
+    \item \bibentry{kurosu_virtual_2020}
+    \item \bibentry{peveler_browser_2020}
+    \item \bibentry{chabot_collaborative_2020}
+    \item \bibentry{divekar_humaine_2020}
+    \item \bibentry{maicus_autograding_2020}
+    \item \bibentry{govindarajulu_quantified_2019}
+    \item \bibentry{briggs_multimodal_2019}
+    \item \bibentry{peveler_reagent:_2019}
+    \item \bibentry{kurosu_translating_2019}
+    \item \bibentry{maicus_autograding_2019}
+  	\item \bibentry{peveler_comparing_2019}
+  	\item \bibentry{briggs_enabling_2019}
+    \item \bibentry{divekar2018}
+  	\item \bibentry{peveler2018acs}
+    \item \bibentry{peveler2018icres}
+    \item \bibentry{bringsjord2018_tai}
+    \item \bibentry{govindarajulu2017icres}
+    \item \bibentry{ied2016}
+    \item \bibentry{mbr2015}
+  \end{itemize}\vspace{-5pt}
+
+%-----------PRESENTATIONS--------------
+\section{Presentations}
+  \begin{itemize}
+  	\item \bibentry{peveler2018_rpi}
+  	\item \bibentry{sigcse2018-demo}
+    \item \bibentry{rpi2017}
+    \item \bibentry{sigcse2017-demo}
+  \end{itemize}
+  
+%-----------POSTERS---------------------
+\section{Posters}
+  \begin{itemize}
+    \item \bibentry{peveler_automated_2020}
+    \item \bibentry{maicus_random_2020}
+    \item \bibentry{peveler_lichen:_2019}
+    \item \bibentry{aikens_facilitating_2019}
+  	\item \bibentry{cislposter2018}
+  	\item \bibentry{peveler2018sigcse_poster}
+  	\item \bibentry{breese2018-poster}
+    \item \bibentry{cisl-ibm-colloquium-poster2017}
+    \item \bibentry{sigcse2017}
+    \item \bibentry{cisl-ibm-colloquium-poster2016}
+    \item \bibentry{sigcse2016}
+    \item \bibentry{cislposter2015}
+  \end{itemize}
+  
+%-----------RESEARCH-------------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cognitive and Immersive Systems}{Cognitive and Immersive Systems Laboratory}
+      {Research Assistant}{Fall 2016 - Ongoing}
+        \resumeItemListStart
+          \resumeItemNew{Explore resolution of intents and entities from multi-modal contexts.}
+          \resumeItemNew{Integrated several different spatial context systems for our cognitive room to allow alternative control schemes instead of traditional mouse/keyboard.}
+          \resumeItemNew{Act as technology liaison between RPI and IBM labs.}
+          \resumeItemNew{Helped redesign desktop based applications to large-scale wall displays. }
+          \resumeItemNew{Develop modules written in NodeJS and Python utilizing MongoDB, PostgreSQL, RabbitMQ, and Redis.}
+          \resumeItemNew{Develop module to handle creation and usage of domain trees across various scenarios.}
+          \resumeItemNew{Develop service and sensor discovery using combination of UDP and RabbitMQ.}
+          \resumeItemNew{Implemented usage of the formal logic, Cognitive Event Calculus, and related automated theorem prover and planner to model and reason over the theory of mind of agents within cognitive systems.}
+          \resumeItemNew{Creation of Cognitive Polygon Framework for definition of tasks and cognitive agents for tasks in Blockworld, Hyperproof, CLEVR, etc.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {IBM - Brasil}{Rio de Janeiro, Brasil}
+      {Pesquisador / Cientista - Junior (Junior Researcher)}{September 2019 -- December 2019}
+      \resumeItemListStart
+        \resumeItemNew{Developed a new digital sticky note tool for in-person design thinking meetings.}
+        \resumeItemNew{Created a multi-user pointing system utilizing cellphone sensors for large-scale wall displays.}
+        \resumeItemNew{Investigated camera-based approach for interacting with large-scale wall displays using transparent markers and multiplexing.}
+        \resumeItemNew{Created and ran several user studies judging effectiveness of designed interfaces based on NASA Task Load Index.}
+        \resumeItemNew{Contributed 33 patches to the IBM Watson Node.js SDK libraries.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rensselaer Polytechnic Institute}{Troy, NY}
+      {Teaching Assistant}{Fall 2013 -- Spring 2015}
+      \resumeItemListStart
+        \resumeItemNew{Ran labs and held office hours for Computer Science I.}
+        \resumeItemNew{Acted as head TA for professor from Fall 2014 to Spring 2015.}
+        \resumeItemNew{As head TA, helped professor manage other TAs, setup submission and grading for HWs, labs, and tests, dealt with cheaters, and other miscellaneous tasks.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Pitney Bowes}{Troy, NY}
+      {Software Development Intern}{June 2014 -- Dec 2015}
+      \resumeItemListStart
+        \resumeItemNew{Worked on fixing bugs and improving testing efforts of the Location Intelligence module of Spectrum Spatial.}
+        \resumeItemNew{Researched porting XML based test suites to native JUnit test suites.}
+        % Rewrote the testing framework so that instead of test suites per data provider, use
+        % paramerized test suites for each data provider to run it. Extensions allowed hooking
+        % into each step of the test sequence for initializing and setting up and closing data
+        % providers to prevent leaks
+        \resumeItemNew{Created JUnit extensions for parametrized testing to simplify adding new data providers for testing.}
+        \resumeItemNew{Implemented 9 functions to Spectrum Spatial's SQL dialect.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Media Technology Support Service at TCNJ}{Ewing, NJ}
+      {User Support}{May 2011 ‐- Jul 2013}
+      \resumeItemListStart
+      	\resumeItemNew{Assist teachers with any issues they have with media technology.}
+        \resumeItemNew{Diagnose and troubleshoot problems in media equipped classrooms.}
+        \resumeItemNew{Deliver and set up media technology for professors.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheadingProject{Submitty}{https://submitty.org}
+    \resumeItemListStart
+      \resumeItemNew{Written using PHP, Python, and C++ backed by PostgreSQL.}
+      \resumeItemNew{Open source programming assignment submission system developed at RPI.}
+      \resumeItemNew{Developed core technologies (DB, MVC pattern) using PHP for submission website.}
+      \resumeItemNew{Created installation and vagrant scripts making it easier for new developers to join project.}
+      \resumeItemNew{Develop and maintain Travis-CI automation tasks for testing and building project.}
+      \resumeItemNew{Help manage tasks and review work from undergraduates working on the project.}
+      \resumeItemNew{Mentor student as part of the Google Summer of Code 2018 on plagiarism detection module.}
+      \resumeItemNew{Integrate Docker into the autograding process next to existing jailed sandbox.}
+    \resumeItemListEnd
+    \resumeSubItem{Forseti}
+      {Open source automated theorem prover written in Python.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+\end{document}
