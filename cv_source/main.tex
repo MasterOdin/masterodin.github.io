@@ -56,9 +56,9 @@
   }
 }
 
-\newcommand{\resumeSubheadingProject}[2] {
+\newcommand{\resumeSubheadingProject}[3] {
   \vspace{-1pt}\item
-    \textbf{#1} (\textnormal{\href{#2}{#2}}) \vspace{-10pt} \\
+    \textbf{#1} (\textnormal{\href{#2}{#2}}): #3
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -75,6 +75,16 @@
       \textbf{#1} & #2 \\
       \textit{\small #3} & \textit{\small #4} \\
       \multicolumn{2}{l}{\textnormal{\small #5}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingGradSchool}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+      \multicolumn{2}{l}{\textnormal{\small #5}} \\
+      \multicolumn{2}{l}{\textnormal{\small #6}} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -100,7 +110,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://mpeveler.com/}{\Large Matthew Peveler}} & \href{mailto:matt.peveler@gmail.com}{matt.peveler@gmail.com}\\
-  \href{https://mpeveler.com/}{https://mpeveler.com} & 737 River St, Apt 3, Troy, NY 12180 \\
+  \href{https://mpeveler.com/}{https://mpeveler.com} & RR 1 Box 52, Warren, VT 05674 \\
   \href{https://github.com/MasterOdin}{https://github.com/MasterOdin} & (201) 478-3065
 \end{tabular*}
 
@@ -108,10 +118,12 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheadingNew
+    \resumeSubheadingGradSchool
       {Rensselaer Polytechnic Institute}{Troy, NY}
-      {Ph.D., Computer Science}{Expected Summer 2020}
-      {Teaching Assistant: Fall 2013 - Spring 2015; Research Assistant: Fall 2015 - Ongoing}
+      {Ph.D., Computer Science}{Nov 2020}
+      %{Teaching Assistant: Fall 2013 - Spring 2015; Research Assistant: Fall 2015 - Fall 2020}
+      {Thesis: Building Cognitive and Immersive Systems: Architecture, Implementation, and Formalization}
+      {Advisor: Selmer Bringsjord}
     \resumeSubheadingNew
       {The College of New Jersey}{Ewing, NJ}
       {Bachelor of Science, Computer Science}{May. 2013}
@@ -121,6 +133,8 @@
 %-----------PUBLICATIONS---------------
 \section*{Publications}
   \begin{itemize}
+    \item \bibentry{yamamoto_category_2022}
+    \item \bibentry{yamamoto_thematic_2021}
     \item \bibentry{kurosu_virtual_2020}
     \item \bibentry{peveler_browser_2020}
     \item \bibentry{chabot_collaborative_2020}
@@ -142,6 +156,13 @@
     \item \bibentry{mbr2015}
   \end{itemize}\vspace{-5pt}
 
+%-----------PATENT APPLICATIONS--------------
+\section{Patents}
+  \begin{itemize}
+      \item \bibentry{kephart_patent_2022}
+      \item \bibentry{kephart_patent_2022_02}
+  \end{itemize}
+  
 %-----------PRESENTATIONS--------------
 \section{Presentations}
   \begin{itemize}
@@ -154,6 +175,7 @@
 %-----------POSTERS---------------------
 \section{Posters}
   \begin{itemize}
+    \item \bibentry{allen_metrics_2022}
     \item \bibentry{peveler_automated_2020}
     \item \bibentry{maicus_random_2020}
     \item \bibentry{peveler_lichen:_2019}
@@ -173,17 +195,17 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Cognitive and Immersive Systems}{Cognitive and Immersive Systems Laboratory}
-      {Research Assistant}{Fall 2016 - Ongoing}
+      {Research Assistant}{Fall 2016 - Fall 2020}
         \resumeItemListStart
-          \resumeItemNew{Explore resolution of intents and entities from multi-modal contexts.}
-          \resumeItemNew{Integrated several different spatial context systems for our cognitive room to allow alternative control schemes instead of traditional mouse/keyboard.}
-          \resumeItemNew{Act as technology liaison between RPI and IBM labs.}
-          \resumeItemNew{Helped redesign desktop based applications to large-scale wall displays. }
-          \resumeItemNew{Develop modules written in NodeJS and Python utilizing MongoDB, PostgreSQL, RabbitMQ, and Redis.}
-          \resumeItemNew{Develop module to handle creation and usage of domain trees across various scenarios.}
-          \resumeItemNew{Develop service and sensor discovery using combination of UDP and RabbitMQ.}
-          \resumeItemNew{Implemented usage of the formal logic, Cognitive Event Calculus, and related automated theorem prover and planner to model and reason over the theory of mind of agents within cognitive systems.}
-          \resumeItemNew{Creation of Cognitive Polygon Framework for definition of tasks and cognitive agents for tasks in Blockworld, Hyperproof, CLEVR, etc.}
+          \resumeItemNew{Conducted research for resolution of intents and entities from multi-modal contexts.}
+          \resumeItemNew{Integrated different spatial context systems for gestural input to large-scale environments.}
+          \resumeItemNew{Acted as technology liaison between RPI and IBM labs.}
+          \resumeItemNew{Developed modules written in Node.js, and Python utilizing MongoDB, PostgreSQL, RabbitMQ, and Redis.}
+          \resumeItemNew{Implemented usage of the formal logic and reasoner to handle theory of mind reasoning of agents.}
+          \resumeItemNew{Created of Cognitive Polygon Framework for definition of tasks and cognitive agents in Blockworld-esque worlds.}
+          \resumeItemNew{Developed and created modular framework for building ``Cognitive and Immersive Systems'' (\url{https://github.com/bishopcais}).}
+          \resumeItemNew{Formalized intelligent room behavior for use in plan and goal recognition algorithm.}
+          \resumeItemNew{Developed collaborative in-person technologies for intelligence analysis.}
         \resumeItemListEnd
 
     \resumeSubheading
@@ -201,6 +223,19 @@
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {PopSQL}{Remote}
+      {Software Engineer}{Nov 2020 - Present}
+      \resumeItemListStart
+        \resumeItemNew{Worked across the entire stack (Ruby on backend, TypeScript/React for frontend) to deliver new features and fix bugs.}
+        \resumeItemNew{Helped architect new system to handle cloud database connections and streamed queries to reduce execution time and memory overhead.}
+        \resumeItemNew{Helped develop various internal practices and procedures around developing the codebase.}
+        \resumeItemNew{Improved various front-end efficency bottlenecks through algorithmic analysis.}
+        \resumeItemNew{Worked on developing new and improving existing database adapters.}
+        \resumeItemNew{Developed prototype dbt integration for the core product.}
+        \resumeItemNew{Helped manage underlying infrastructure as defined through Terraform.}
+      \resumeItemListEnd
+        
     \resumeSubheading
       {Rensselaer Polytechnic Institute}{Troy, NY}
       {Teaching Assistant}{Fall 2013 -- Spring 2015}
@@ -224,34 +259,28 @@
         \resumeItemNew{Implemented 9 functions to Spectrum Spatial's SQL dialect.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Media Technology Support Service at TCNJ}{Ewing, NJ}
-      {User Support}{May 2011 ‐- Jul 2013}
-      \resumeItemListStart
-      	\resumeItemNew{Assist teachers with any issues they have with media technology.}
-        \resumeItemNew{Diagnose and troubleshoot problems in media equipped classrooms.}
-        \resumeItemNew{Deliver and set up media technology for professors.}
-      \resumeItemListEnd
+    %\resumeSubheading
+    %  {Media Technology Support Service at TCNJ}{Ewing, NJ}
+    %  {User Support}{May 2011 ‐- Jul 2013}
+    %  \resumeItemListStart
+    %  	\resumeItemNew{Assist teachers with any issues they have with media technology.}
+    %    \resumeItemNew{Diagnose and troubleshoot problems in media equipped classrooms.}
+    %    \resumeItemNew{Deliver and set up media technology for professors.}
+    %  \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Open Source Projects}
   \resumeSubHeadingListStart
-    \resumeSubheadingProject{Submitty}{https://submitty.org}
-    \resumeItemListStart
-      \resumeItemNew{Written using PHP, Python, and C++ backed by PostgreSQL.}
-      \resumeItemNew{Open source programming assignment submission system developed at RPI.}
-      \resumeItemNew{Developed core technologies (DB, MVC pattern) using PHP for submission website.}
-      \resumeItemNew{Created installation and vagrant scripts making it easier for new developers to join project.}
-      \resumeItemNew{Develop and maintain Travis-CI automation tasks for testing and building project.}
-      \resumeItemNew{Help manage tasks and review work from undergraduates working on the project.}
-      \resumeItemNew{Mentor student as part of the Google Summer of Code 2018 on plagiarism detection module.}
-      \resumeItemNew{Integrate Docker into the autograding process next to existing jailed sandbox.}
-    \resumeItemListEnd
-    \resumeSubItem{Forseti}
-      {Open source automated theorem prover written in Python.}
+    \resumeSubheadingProject{Submitty}{https://submitty.org}{Assignment submission and auto-grading server for Computer Science written using mix of PHP, Python, Bash, and C++.}
+    \resumeSubheadingProject{phinx}{https://github.com/cakephp/phinx}{Framework agnostic database migration software written in PHP.}
+    \resumeSubheadingProject{asciidoc-py}{https://github.com/asciidoc-py/asciidoc-py}{Python client for parsing AsciiDoc files into HTML and DocBook.}
+    \resumeSubheadingProject{Slate}{https://github.com/slatedocs/slate}{Static API site generator written in Ruby, HTML, and JavaScript.}
+    \resumeSubheadingProject{pypdf}{https://github.com/py-pdf/pypdf}{Pure python library for manipulating PDFs.}
+    \resumeSubheadingProject{sqlectron}{https://github.com/sqlectron/sqlectron-gui}{Desktop SQL client written using TypeScript, React, and Electron.}
+    \resumeSubheadingProject{HUMAINE}{https://github.com/humaine-anac}{Competition framework written in Node for running multi-agent negotiation against a human.}
   \resumeSubHeadingListEnd
 
 %
