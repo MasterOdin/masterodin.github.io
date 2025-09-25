@@ -1,4 +1,7 @@
-.DS_STORE
-logic/
-Cookbook/
-.idea/
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+.DS_Store
