@@ -22,7 +22,7 @@ and [asciidoc-py](https://github.com/asciidoc-py/asciidoc-py). See my CV and Git
 list of my research and work.
 
 <p style="text-align: center; margin: 25px 0px">
-    <a href='/assets/cv/20241211.pdf'>CV (2024.12.11)</a> | <a href='https://github.com/MasterOdin'>github.com/MasterOdin</a>
+    <a href='/assets/cv/20250929.pdf'>CV (2025.09.29)</a> | <a href='/assets/resume/20250929.pdf'>Resume (2025.09.29)</a> | <a href='https://github.com/MasterOdin'>github.com/MasterOdin</a>
 </p>
 
 Outside of work and programming, I am an avid skier, consumer of various forms of media, and
